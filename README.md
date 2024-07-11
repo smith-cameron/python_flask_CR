@@ -1,5 +1,5 @@
 
-## Connecting to a Database([[mysqlDB.py]])
+## Connecting to a Database
 [Connecting to a Database- Platform](https://login.codingdojo.com/m/506/12463/87417)
 MAIN POINTS
 - Of `import pymysql.cursors` cursor is the pymysql package object we use to interact with the database
