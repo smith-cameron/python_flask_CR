@@ -1,6 +1,4 @@
-[[House Keeping]]
-**FINALLY** - We get to start using a combination of our mysql and OOP skills in our flask app!
-How we are going to do that is with the __pymysql__ package and our __connection file__
+
 ## Connecting to a Database([[mysqlDB.py]])
 [Connecting to a Database- Platform](https://login.codingdojo.com/m/506/12463/87417)
 MAIN POINTS
@@ -52,7 +50,7 @@ This `__init__` method will take in self (of course) and a variable to carry a d
 ### [[Model - @classmethod]]
 use `@classmethod` to query our database, __WHY__?
 *You can use class methods for any methods that are not bound to a specific instance but the class. In practice, you often use class methods for methods that create an instance of the class. When a method creates an instance of the class and returns it, the method is called a factory method.*
-==Also so we can import `cls`==
+
 - [ ] Multi-line strings will help debug faster with more complicated queries that have more variables
 - [ ] call the `connect()` function with arguments
 	- [ ] the *schema* you are targeting
@@ -132,11 +130,3 @@ __models/user.py__
         #print(f"debugging: {cls(this_user[0])}")
         return cls(this_user[0])
 ```
-
-	If your query returns nothing you can return it directly
-	Else: set it to a variable to make class objects
-- [ ] Create an empty list to return - 
-- [ ] Loop through results 
-- [ ] use `cls` to append class objects into empty list 
-- [ ] return something (if required)
-
